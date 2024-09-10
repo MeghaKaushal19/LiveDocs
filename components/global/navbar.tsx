@@ -1,12 +1,15 @@
 import Link from "next/link";
+import Image from 'next/image';
 
  const Navbar = () => {
   return (
     <nav className="flex items-center justify-between w-full px-4 py-2 bg-white">
-      {/* <Image src="/path-to-your-logo.svg" alt="LiveDocs Logo" width={32} height={32} /> */}
+      <div className = "flex items-center p-2">
+      <Image src="/images/image3.png" alt="LiveDocs Logo" width={40} height={40} />
       <Link href="/">
-        <p className="text-black font-bold">LiveDocs</p>
+        <p className="text-black text-xl font-bold">LiveDocs</p>
       </Link>
+      </div>
       <div className="flex">
         <Link href="/Home">
           <p className="text-black">Home</p>
