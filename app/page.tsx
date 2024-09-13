@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import { ChevronDown } from 'lucide-react';
 
 const page = () => {
   return (
@@ -26,6 +27,10 @@ const page = () => {
         Live Sync
         </button>
       </div>  
+      <div className="py-4 flex flex-col items-center justify-center">
+      <p>Discover what’s possible with LiveDocs.</p>
+      <ChevronDown size={25} />
+      </div>
     </div>
   )
 }
