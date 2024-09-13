@@ -1,50 +1,33 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Users } from "lucide-react";
-import Link from "next/link";
+import React from 'react'
+import Image from 'next/image';
 
-const FeatureButton = ({
-  icon: Icon,
-  label,
-}: {
-  icon: React.ComponentType<any>;
-  label: string;
-}) => (
-  <Button
-    variant="outline"
-    size="lg"
-    className="h-32 text-lg text-gray-800 font-semibold border-2 border-gray-800 hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 flex flex-col items-center justify-center space-y-2"
-  >
-    <Icon size={32} className="text-gray-800" />
-    <Link href="/dashboard">
-      <span>{label}</span>
-    </Link>
-  </Button>
-);
-
-const HomePage = () => {
+const page = () => {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <Card className="w-full max-w-4xl bg-white shadow-xl rounded-xl overflow-hidden">
-        <CardHeader className="bg-gray-400 text-white text-center py-8">
-          <CardTitle className="text-3xl font-bold">
-            Welcome to LiveDocs
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="p-8">
-          <p className="text-gray-600 text-center mb-8">
-            Explore our features and connect with others. Choose an option below
-            to get started.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FeatureButton icon={BookOpen} label="Live Docs" />
-            <FeatureButton icon={Users} label="Meet" />
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
-};
+    <div className = "flex flex-col items-center justify-center py-2">
+      <div>
+      <Image src="/images/image.png" alt = "background-image" height={400} width = {450}/>
+      </div>
+      <h1 className= "font-Play sans-serif text-5xl">“United, we build!”</h1>
+      <p className= "text-center py-3">Explore our  features and connect with others. Choose an option to get started.</p> 
+      <div className = "flex flex-row items-center justify-center py">
+      {/* <button className= "bg-purple-600 text-black px-4 py-2 rounded-lg ml-4">
+        Live Docs
+      </button>
+      <button className="bg-none border-black text-black px-4 py-2 rounded-lg ml-4" >
+        Live Sync
+      </button> */}
+      <button className="px-8 border-solid border-black   ">   
 
-export default HomePage;
+      <Image src="/images/image 7.png" alt="LiveDocs Logo" width={40} height={40} />
+        Live Docs
+        </button>
+      <button className="px-8 border-solid border-black">
+      <Image src="/images/image 5.png" alt="LiveDocs Logo" width={40} height={40} />
+        Live Sync
+        </button>
+      </div>  
+    </div>
+  )
+}
+
+export default page

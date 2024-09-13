@@ -29,13 +29,12 @@ import Image from 'next/image';
       </div>
 
       <div className="flex"> 
-      <button className= "text-black px-4 py-2 rounded-lg">
+      <button className= "text-black px-3 py-2 rounded-lg">
         Sign Up 
       </button>
-      <button className= "bg-purple-600 text-black px-4 py-2 rounded-lg ml-4">
+      <button className= "bg-purple-500 text-black px-3 py-2 rounded-lg ml-4">
         GET STARTED
       </button>
-    
     </div>
     </nav>
   );
