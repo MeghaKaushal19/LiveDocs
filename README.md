@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📄 LiveDocs
 
-## Getting Started
+**Version:** 1.1.1  
+**Tagline:** Real-Time Document Collaboration with Built-in Video Conferencing
 
-First, run the development server:
+LiveDocs is a collaborative platform designed to streamline teamwork with **real-time document editing** and **integrated video conferencing**. Whether you're brainstorming, drafting proposals, or finalizing reports — LiveDocs keeps everyone connected, productive, and focused.
+
+---
+
+## ✨ Features
+
+### 📝 Document Collaboration
+- Real-time multi-user editing with live cursor updates
+- Rich-text formatting: headings, images, tables, links
+- Auto-save with complete version history and rollback
+- Easy sharing with granular permission settings
+- Fully responsive on desktop, tablet, and mobile
+
+### 📹 Video Conferencing
+- HD video and crystal-clear audio with WebRTC
+- Screen sharing support
+- In-meeting file sharing and chat
+- Secure, encrypted calls with minimal latency
+- Supports multiple participants in a single call
+
+### 🔄 Unified Experience
+- Seamless integration of editing + conferencing in one view
+- Real-time sync between document changes and call events
+- Notifications for edits, joins, and system events
+- Secure authentication with OAuth 2.0 (Google)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js** – Fast and dynamic UI
+- **Quill.js / Draft.js** – Rich text editing capabilities
+- **WebRTC** – Peer-to-peer video/audio calls
+- **WebSockets** – Live collaboration and sync
+
+### Backend
+- **Appwrite** – User management, auth, and real-time DB
+- **Node.js + Express** – RESTful API server and session handling
+- **Operational Transformation (OT)** or **CRDTs** – Conflict-free collaborative editing
+- **PostgreSQL / MongoDB** – Persistent data storage
+
+### Infrastructure
+- **Google Docs API** – Document interactions and syncing
+- **Google OAuth 2.0** – Secure authentication
+- **Cloud Storage (GCP / AWS S3)** – Document storage
+- **STUN / TURN Servers** – WebRTC NAT traversal
+- **Elasticsearch** – Real-time document search
+
+---
+
+## 🔒 Security & Privacy
+- End-to-end encryption for video/audio streams
+- Encrypted document storage
+- Secure login with OAuth 2.0
+- Fine-grained access control for documents and meetings
+- GDPR-compliant data handling
+
+---
+
+## ⚙️ Installation
+
+> 📌 LiveDocs is a full-stack application requiring both frontend and backend setup.
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-org/LiveDocs.git
+cd LiveDocs
+
+# Frontend Setup
+cd client
+npm install
+npm start
+
+# Backend Setup
+cd ../server
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
