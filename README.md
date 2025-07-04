@@ -68,7 +68,7 @@ LiveDocs is a collaborative platform designed to streamline teamwork with **real
 > 📌 LiveDocs is a full-stack application requiring both frontend and backend setup.
 
 ```bash
-# Clone the repo
+# Clone the repo MeghaKaushal19/LiveDocs https://share.google/DXoEPGLyOIjmCOUUm
 git clone https://github.com/your-org/LiveDocs.git
 cd LiveDocs
 
